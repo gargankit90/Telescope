@@ -30,13 +30,13 @@ postSchemaObject = {
     type: String,
     optional: true,
     autoform: {
-      editable: true,
-      type: "bootstrap-url"
+      omit: true
     }
   },
   title: {
     type: String,
     optional: false,
+    label:'Idea Name',
     autoform: {
       editable: true
     }
@@ -44,6 +44,7 @@ postSchemaObject = {
   body: {
     type: String,
     optional: true,
+    label:'Idea Description',
     autoform: {
       editable: true,
       rows: 5,

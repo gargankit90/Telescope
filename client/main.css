@@ -1,0 +1,23 @@
+@font-face{font-family:Brown;src:url(https://help.aol.com/assets/fonts/brown-regular.eot);src:url(https://help.aol.com/assets/fonts/brown-regular.eot?#iefix) format('embedded-opentype'),url(https://help.aol.com/assets/fonts/brown-regular.woff) format('woff'),url(https://help.aol.com/assets/fonts/brown-regular.ttf) format('truetype'),url(https://help.aol.com/assets/fonts/brown-regular.svg#Brown) format('svg');font-weight:400;font-style:normal}
+@font-face{font-family:BrownLight;src:url(https://help.aol.com/assets/fonts/brown-light.eot);src:url(https://help.aol.com/assets/fonts/brown-light.eot?#iefix) format('embedded-opentype'),url(https://help.aol.com/assets/fonts/brown-light.woff) format('woff'),url(https://help.aol.com/assets/fonts/brown-light.ttf) format('truetype'),url(https://help.aol.com/assets/fonts/brown-light.svg#BrownLight) format('svg');font-weight:400;font-style:normal}
+@font-face{font-family:AktivGrotesk;src:url(https://help.aol.com/assets/fonts/aktiv-grotesk-regular.eot);src:url(https://help.aol.com/assets/fonts/aktiv-grotesk-regular.eot?#iefix) format('embedded-opentype'),url(https://help.aol.com/assets/fonts/aktiv-grotesk-regular.woff) format('woff'),url(https://help.aol.com/assets/fonts/aktiv-grotesk-regular.ttf) format('truetype'),url(https://help.aol.com/assets/fonts/aktiv-grotesk-regular.svg#AktivGrotesk) format('svg');font-weight:400;font-style:normal}
+@font-face{font-family:AolLogo;src:url(https://help.aol.com/assets/fonts/AolLogo.eot?1);src:url(https://help.aol.com/assets/fonts/AolLogo.eot?#iefix-1) format('embedded-opentype'),url(https://help.aol.com/assets/fonts/AolLogo.woff?1) format('woff'),url(https://help.aol.com/assets/fonts/AolLogo.ttf?1) format('truetype'),url(https://help.aol.com/fonts/AolLogo.svg?1#AolLogo) format('svg');font-weight:400;font-style:normal}
+
+body {
+	font-family: AktivGrotesk, Roboto;
+}
+.about_page_text{
+	margin: 20px;
+}
+
+.about_page_text h2{
+	margin-bottom: 5px;
+}
+
+.about_page_text ul.about-bullets{
+	padding-top: 10px;
+}
+
+.about_page_text ul.about-bullets li span{
+	font-weight: bold;
+}
