@@ -1,0 +1,140 @@
+.posts {
+  width: 100%;
+}
+
+.posts.list > .post {
+  cursor: pointer;
+  transition: background 50ms ease-in-out;
+  &:hover {
+    @include large {
+      background: $lightest-grey;
+      .post-title {
+        color: $primary-color;
+      }
+    }
+  }
+
+  @include small {
+    &:active {
+      background: $lightest-grey;
+      .post-title {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &.sticky {
+    background: $primary-color;
+
+    .post-title,
+    .post-meta,
+    .post-body,
+    .post-body a {
+      color: white;
+    }
+
+    .avatar-initials {
+      color: $primary-color;
+      background: white;
+    }
+  }
+
+  @include small {
+    .inner {
+      padding: 0 1rem;
+    }
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+}
+
+.post {
+  background: #ffffff;
+  border-top: 1px solid $lightest-grey;
+  padding: 1.5rem 1.5rem 0.5rem;
+  position: relative;
+  overflow: hidden;
+
+  &:first-child {
+    border: none;
+  }
+
+  @include small {
+    padding: 1.5rem 1rem 0.5rem;
+  }
+}
+
+.post-title {
+  pointer-events: none;
+  color: $darkest-grey;
+  display: block;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-rendering: optimizeLegibility;
+  
+  &:visited {
+    color: $grey;
+  }
+
+  @include small {
+    font-size: 18px;
+  }
+}
+
+.post-heading {
+  margin-bottom: 1rem;
+  .post-body {
+    color: $grey;
+    font-size: 14px;
+    max-height: 2rem;
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+  }
+}
+
+a.back-link {
+  color: $grey;
+  display: block;
+  margin-bottom: 1rem;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.single-post .post {
+  padding: 0 0 2rem;
+
+  .post-heading {
+    margin-bottom: 2rem;
+    a:visited {
+      color: inherit;
+    }
+
+    .post-title {
+      font-size: 28px;
+      line-height: 1;
+      margin-bottom: 1rem;
+      white-space: normal;
+      white-space: normal;
+      overflow: visible;
+      @include small {
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+.post-body {
+  margin-bottom: 2rem;
+  font-size: 16px;
+  @include small {
+    font-size: 14px;
+  }
+}

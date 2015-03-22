@@ -1,0 +1,19 @@
+.loader-wrap {
+  background: white;
+  z-index: 50000;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.loader {
+  border-style: solid;
+  border-width: 3px;
+  border-color: fade-out($primary-color, 0.8);
+  border-left-color: fade-out($primary-color, 0.2);
+  animation: rotate 500ms infinite linear, fade-in 1s ease;
+}

@@ -1,0 +1,81 @@
+$banner-height: 50px;
+$mobile-banner-height: 180px;
+
+.newsletter-banner.newsletter-banner {
+  height: $banner-height;
+  background: white;
+  border: 1px solid fade-out($grey, 0.6);
+  box-shadow: 0 2px 6px 2px fade-out($grey, 0.8);
+  border-radius: 25px;
+  font-size: 1rem;
+  color: $dark-grey;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  width: 290px;
+  z-index: 5000;
+  font: 400 0.875rem "Avenir Next";
+  line-height: $banner-height;
+}
+
+.newsletter-banner form {
+  .newsletter-cta:before {
+    content: "Get a weekly recap of the best posts!"
+  }
+  
+  &:hover {
+    .newsletter-cta:before {
+      content: "SUBSCRIBE";
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: $primary-color;
+    }
+  }
+}
+
+.newsletter-dismiss:hover + form {
+    .newsletter-cta:before {
+      content: "No thanks."
+    }
+  }
+
+.newsletter-banner .loader {
+  display: none;
+}
+
+.newsletter-banner.show-loader {
+  width: $banner-height;
+  transition: width 400ms cubic-bezier(0.5, -0.75, 0.25, 1.25);
+  .spinner {
+    opacity: 1;
+    display: block;
+  }
+}
+
+.newsletter-subscribed {
+  line-height: $banner-height;
+  &:before {
+    content: "✔︎";
+  }
+}
+
+.newsletter-dismiss {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: $light-grey;
+  text-align: center;
+  line-height: 25px;
+  color: #333333;
+  top: -5px;
+  right: -5px;
+  bottom: 0;
+  font-size: 1rem;
+}
+
+.newsletter-dismiss:hover {
+  color: white;
+  background: $primary-color;
+}

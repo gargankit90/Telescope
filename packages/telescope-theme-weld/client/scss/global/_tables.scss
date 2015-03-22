@@ -1,0 +1,18 @@
+table {
+  width: 100%;
+  tr {
+    border-bottom: 1px solid $light-grey;
+  }    
+  td, th {
+      padding: 1rem;
+    } 
+
+  thead {
+    tr {
+      td, th {
+        font-weight: 600;
+        background: $lightest-grey;
+      }
+    }
+  }
+}
