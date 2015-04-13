@@ -17,4 +17,9 @@
 .about_page_image {
 	width: 100%;
 	background: #fdc32e;
+	text-align: center;
+}
+
+.about_page_image img{
+	margin-top: 50px;
 }
